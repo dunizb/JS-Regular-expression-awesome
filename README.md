@@ -14,24 +14,6 @@ var str = " 中国  北京   朝阳区  df ";
 str = str.replace(reg, "$1%$2")
 ```
 
-## 检查用户名：只能输入1-30个以字母开头的字串
-```js
-function isPasswd(s) { 
-    var patrn=/^(w){6,20}$/; 
-    if (!patrn.exec(s)) return false 
-    return true 
-}
-```
-
-## 检查密码：只能输入6-20个字母、数字、下划线 
-```js
-function isPasswd(s) { 
-    var patrn=/^(w){6,20}$/; 
-    if (!patrn.exec(s)) return false 
-    return true 
-} 
-```
-
 ## 检查手机号码：必须以数字开头，除数字外，可含有“-”
 ```js
 function isMobil(s) { 
