@@ -41,31 +41,9 @@ str = str.replace(reg, "$1%$2")
 
 ## 检查手机号码：必须以数字开头，除数字外，可含有“-”
 ```js
-function isMobil(s) { 
-    var patrn=/^[+]{0,1}(d){1,3}[ ]?([-]?((d)|[ ]){1,12})+$/;
-    if (!patrn.exec(s)) return false
-    return true
-} 
-if(mobilephone!=""&&!/^1[358][0-9]{9}$/.test(mobilephone)){
-     alert("移动号码是11个数字");
-     return false;
-}
-//判断是否手机号
-function isPhoneNumber(value){
-    var flag=false;    
-    if(/^(133|153|18[0169])+[0-9]{8}$/.test(value)){
-        flag=true;
-    }
-    return flag;
-}
+//带中划线的手机号码：/^[+]{0,1}(d){1,3}[ ]?([-]?((d)|[ ]){1,12})+$/
 
-function checkPhone(){ 
-    var phone = document.getElementById('phone').value;
-    if(!(/^1[34578]\d{9}$/.test(phone))){ 
-        alert("手机号码有误，请重填");  
-        return false; 
-    } 
-}
+//普通手机号码：/^1[34578]\d{9}$/
 ```
 
 ## 校验普通电话、传真号码：可以“+”开头，除数字外，可含有“-” 
