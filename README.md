@@ -78,7 +78,8 @@ function encryptPhone(val){
 
 encryptPhone('13173786224'); // 131****6224
 ```
-**格式化金额**
+
+## 格式化金额
 ```j's
 var money = 1003450.89;
 console.log(money.toString().replace(/(?=\B(?:\d{3})+\b)(\d{3}(?:\.\d+$)?)/g,',$1'));
