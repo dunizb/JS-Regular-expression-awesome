@@ -78,6 +78,12 @@ function encryptPhone(val){
 
 encryptPhone('13173786224'); // 131****6224
 ```
+**格式化金额**
+```j's
+var money = 1003450.89;
+console.log(money.toString().replace(/(?=\B(?:\d{3})+\b)(\d{3}(?:\.\d+$)?)/g,',$1'));
+// 1,003,450.89
+```
 
 ## 配置中文字符
 ```js
