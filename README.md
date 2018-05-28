@@ -1,6 +1,9 @@
 # JS-Regular-expression-awesome
 :page_facing_up:我收藏的、开发中用过的正则表达式，欢迎补充
-
+## 验证文件扩展名
+```js
+/^.*?\.(html|css|jpg)$/
+```
 ## 密码验证类
 **6-16位字符，区分大小写（不能是9位以下的纯数字，不含空格）**  
 ```js
